@@ -1,0 +1,30 @@
+PATCH http://localhost:3000/tasks/6/status
+Content-Type: application/json
+
+{
+  "status": "IN_PROGRESS"
+}
+
+### Delete a task
+DELETE http://localhost:3000/tasks/13
+Accept: application/json
+
+### Get task by id
+GET http://localhost:3000/tasks/1
+Accept: application/json
+
+### Create task
+POST http://localhost:3000/tasks
+Content-Type: application/x-www-form-urlencoded
+
+title=Title&description=orm task description
+
+### Get all tasks
+GET http://localhost:3000/tasks
+Accept: application/json
+
+### Get filtered tasks
+GET http://localhost:3000/tasks?search=Title
+Accept: application/json
+
+###
