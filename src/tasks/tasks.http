@@ -16,12 +16,14 @@ Accept: application/json
 ### Create task
 POST http://localhost:3000/tasks
 Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpYXQiOjE2NDMyMjM3MzcsImV4cCI6MTY0MzIzMDkzN30.b20vp4D1IKVbJ7GMyC2EDmGUksseD39a8QFRwBdhYF4
 
 title=Title&description=orm task description
 
 ### Get all tasks
 GET http://localhost:3000/tasks
 Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWF0IjoxNjQzMjI0MDgwLCJleHAiOjE2NDMyMzEyODB9.coyLwccPuZVfOydpogPFDGEIzpgb0YTO7Mn0qTwArfM
 
 ### Get filtered tasks
 GET http://localhost:3000/tasks?search=Title
