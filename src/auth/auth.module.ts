@@ -11,7 +11,7 @@ import { JwtStrategy } from './jwt.strategy';
   imports: [
     JwtModule.register({
       secret: 'nestjs-task-management-secret',
-      signOptions: { expiresIn: 7200 },
+      // signOptions: { expiresIn: 7200 },
     }),
     PassportModule.register({ defaultStrategy: 'jwt' }),
     TypeOrmModule.forFeature([UserRepository]),

@@ -2,16 +2,16 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-  "username": "user2",
-  "password": "!123Abcdef"
+  "username": "{{user2}}",
+  "password": "{{password}}"
 }
 
 ###
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
 {
-  "username": "user1",
-  "password": "!123Abcdef"
+  "username": "{{user1}}",
+  "password": "{{password}}"
 }
 
 ###
