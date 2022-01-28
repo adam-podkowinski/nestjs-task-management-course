@@ -1,4 +1,4 @@
-PATCH http://localhost:3000/tasks/6/status
+PATCH http://localhost:3000/tasks/5/status
 Content-Type: application/json
 Authorization: Bearer {{user1_token}}
 
@@ -7,12 +7,12 @@ Authorization: Bearer {{user1_token}}
 }
 
 ### Delete a task
-DELETE http://localhost:3000/tasks/13
+DELETE http://localhost:3000/tasks/20
 Accept: application/json
-Authorization: Bearer {{user1_token}}
+Authorization: Bearer {{user2_token}}
 
 ### Get task by id
-GET http://localhost:3000/tasks/2
+GET http://localhost:3000/tasks/5
 Accept: application/json
 Authorization: Bearer {{user1_token}}
 
@@ -26,7 +26,7 @@ title=Title&description=orm task description
 ### Get all tasks
 GET http://localhost:3000/tasks
 Accept: application/json
-Authorization: Bearer {{user1_token}}
+Authorization: Bearer {{user2_token}}
 
 ### Get filtered tasks
 GET http://localhost:3000/tasks?search=Title
